@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin-3</title>
-</head>
-<body>
-    <h1>Rock Paper Scissors</h1>
-    <p>Open the console (F12 or right-click > Inspect > Console) and type <strong>playGame()</strong> to start!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper Scissors</h1>
+      <p>First to 5 points wins!</p>
+
+      <div class="score">
+        <div>
+          You: <span id="humanScore">0</span> | Computer:
+          <span id="computerScore">0</span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
+
+      <div id="results"></div>
+
+      <button class="reset-btn" id="resetBtn">Play Again</button>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
